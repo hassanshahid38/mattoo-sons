@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATTOO|CORPORATION</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-fix" >
+    <img style="height: 40px;margin-left: 10px;" src="logo.webp" alt="mattoo">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#who-r-we">who are we</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#britania">our partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#call-our-net">our networks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">contact us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // JavaScript to set the active class
+    document.addEventListener('DOMContentLoaded', function () {
+      var path = window.location.pathname;
+      var page = path.split("/").pop();
+
+      // Create a mapping of pages to navigation IDs
+      var pageMap = {
+        'index.html': 'nav-home',
+        'who-are-we.html': 'nav-who',
+        'our-partners.html': 'nav-partners',
+        'our-networks.html': 'nav-networks',
+        'contact-us.html': 'nav-contact'
+      };
+
+      // Get the corresponding nav ID
+      var navId = pageMap[page] || 'nav-home';
+
+      // Remove 'active' class from all nav links
+      var navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(function (link) {
+        link.classList.remove('active');
+      });
+
+      // Add 'active' class to the current nav link
+      document.getElementById(navId).classList.add('active');
+    });
+  </script>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+    aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+    aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+    aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bg.nutro.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="bgkopiko.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="bg goroyale.jpg" class="d-block w-100" alt="...">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+  data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+<!-- Custom navigation buttons -->
+<!-- <button id="customPrevBtn" class="btn btn-primary">Previous Image</button>
+<button id="customNextBtn" class="btn btn-primary">Next Image</button> -->
+<script>
+    document.getElementById('customPrevBtn').addEventListener('click', function () {
+      var carousel = document.querySelector('#carouselExampleIndicators');
+      var carouselInstance = bootstrap.Carousel.getInstance(carousel);
+      carouselInstance.prev(), `data-bs-interval="100"`;
+    });
+
+    document.getElementById('customNextBtn').addEventListener('click', function () {
+      var carousel = document.querySelector('#carouselExampleIndicators');
+      var carouselInstance = bootstrap.Carousel.getInstance(carousel);
+      carouselInstance.next(), `data-bs-interval="100"`;
+    });
+  </script>
+  <h2 id="h2">Mattoo Group was founded by </h2>
+  <h1 id="h1">" Mr. H.M.Usman Mattoo "</h1>
+  <p style="padding: 20px;text-align: center;">Mattoo Corporation was established in the year 1966 by Late Mr. H. M.
+    Usman Mattoo as a small trading house that imported Fast Moving Consumer Goods (FMCGs).From various countries around
+    the world and then sold those in the wholesale market. Over the years, through sheer commitment and dedication. The
+    small trading house has evolved into a state of the art distribution network.Today, Mattoo Corporation is a
+    powerhouse that has introduced various international brands into Pakistan, including Brittania and nutro With a
+    distribution network of over 103 cities. <br> Mattoo Corporation is rated amongst <br> One of the top distributors
+    of <br> imported goods in Pakistan.</p>
+    <!-- <h1 style="text-align: center;"><a style="color: grey;" href="">Learn more>>></a></h1> -->
+    <hr>
+    <div id="who-r-we">
+      <h1
+      style="text-align: center;color: #492517;font-family:  Playfair Display, serif;font-weight: 700;">
+      WHO ARE WE </h1>
+      <li> Established in the year 1966 by the Late Mr. H. M. Usman Mattoo, Mattoo Corporation started its operations with
+        humble beginnings as a small trading house in Lahore. The first offices of the organization were situated in the
+        Red Cross Building in Shahalam Market, Lahore. At that point the company used to import foreign FMCG products and
+        used to sell those at the wholesale market in Lahore.
+      </li>
+      <li>However Mr. Usman Mattoo’s vision for the company was far greater. Under his visionary leadership and sheer
+        dedication, the company started to expand its outreach, and soon started catering to all of Punjab and not just
+        Lahore. Within a brief span of three years, the company went national and expanded its outreach to most of
+        Pakistan.
+      </li>
+      <li>In 1978 Mr. Tariq Mehmood Mattoo and Nauman Usman Mattoo joined the operations of the company and focused on
+        increasing the scope of procurement for the company. Whereas their father increased the outreach in Pakistan, Mr.
+        Mehmood and Mr. Usman Mattoo added new territories for procurement including Singapore and the Far East.
+      </li>
+      <li>They expanded the clientele of Mattoo Corporation and added brands such as Johnson & Johnsons and Reckitt
+        Benckiser to the already star studded clientele which included Heinz, Procter & Gamble and UniLever.
+      </li>
+      <li>In 2003 Mr. Ali Tariq Mattoo joined the business as the third generation of the Mattoo family. Soon after his
+        joining he was given the task of turning Mattoo Corporation from a trading house into a distribution network.
+        
+      </li>
+      <li>For this purpose, Mr. Ali Tariq Mattoo partnered with Mr. Mohammad Jamil Sheikh and together within a few years
+        they transformed Mattoo Corporation into a professional distribution network.
+      </li>
+      <li>Today Mattoo Corporation has a vast distribution network that covers over 103 cities and is rated amongst the
+        top 5 distributors of imported goods in Pakistan.
+      </li>
+      <li>Family owned 100% self financed company.
+      </li>
+      <li>Head office is situated in Lahore, Punjab. Zonal offices are in Karachi and Islamabad. By 2017 end, plans to
+        extend regional offices in Peshawar and Multan as well.
+        
+      </li>
+      <li>Warehousing Capacity is as below:
+        
+        - 6,000 Sq.Mtr in Karachi.
+        
+        - 4,000 Sqr.Mtr In Lahore.
+        
+        - 2,000 Sqr.Mtr in Islamabd.
+        
+        - 500 Sqr.Mtr in Peshawar.
+        
+        - 500 Sqr.Mtr in Multan.
+      </li>
+      <li>New warehouse under construction of area 40,000 Sqr.Mtr in Karachi, functional by second half of 2018.
+        
+        <p style="font-weight: bolder;" >Commercial Vehicle Fleet:</p>
+          
+        
+        
+        - Karachi: One 10 tons Vehicle, 5 One Ton Vehicles,
+        
+        - Lahore: One 10 tons Vehicle, 5 One Ton Vehicles,
+        
+        - Islamabad: Five 1 Ton Vehicles. <br>
+        
+        <p style="font-weight: bolder;" >
+          Sub distributors Fleet:</p>
+        
+        - 76 Vehicles with capacity 0.8 tons for daily operations.
+        
+      </li>
+    </div>
+    <hr>
+    <div class="our-partners">
+      <h1 style="text-align: center;color: #492517;font-family:  Playfair Display, serif;font-weight: 700;">
+        OUR PARTNERS</h1>
+        <div id="britania">
+          <div class="br-img"><img style="width: 230;" src="logobr.png" alt=""></div>
+          
+          <h3 style="display: inline-block;">Britannia</h3>
+          <p class="p">
+            Britannia is a leading food company from India. Founded 123 years ago in a small house in Kolkata the company
+            has now grown into a conglomerate that makes over $1.2 billion in revenue annually. It delivers products in over
+            5 categories and proudly caters to more than half the Indian population. The company’s core emphasis across its
+            portfolios has always been on healthy, fresh and delicious food. The company is amongst the top 100 most trusted
+            brands in India and is a name that's well recognized across the globe.</p>
+          </div>
+          <div id="nutro">
+            <img src="logonutro.jpeg" alt="">
+            <h3>Nutro</h3>
+            <p>
+              
+              ‘Nutro’ is a common name in households across UAE & Oman, and is famous for its crunchy wafers, mouth-watering
+              cream biscuits, delicious crackers, healthy digestive & tasty glucose biscuits.</p>
+            </div>
+            <div id="mayora">
+              <img src="logomayora.png" alt="">
+              <h3>Mayora</h3>
+              <p>
+                Started baking its first biscuits out of a home kitchen in 1948 and then Mayora Group was formally established
+                in 1977. They have total of 8 product categories: biscuit, candy, wafer, chocolate, coffee, instant food,
+                beverage and cereal. Mayora is in industry from more than 65 years and have presence in more than 90 countries.
+                In 2018 Mattoo Corporation was appointed distributor for Mayora brands in Pakistan.</p>
+              </div>
+              <div id="goroyale">
+                <img src="logogoroyal.jpeg" alt="">
+                <h3>Goroyale</h3>
+                <p>Crunchy, Crispy, Appetizing and Delicious…!!</p>
+              </div>
+            </div>
+            <hr>
+            <h1 id="call-our-net"
+            style="text-align: center;color: #492517;font-family:  Playfair Display, serif;font-weight: 700;">
+            Our Networks</h1>
+            <img style="height: auto;display: flex;" src="map.jpeg" alt="">
+            <div id="our-networks">
+              <ul style="display: inline-flex;gap: 50px;">
+                <li>Abbottaabad</li>
+                <li>Ahmedpur</li>
+                <li>Ali Pur Chattha</li>
+              </ul>
+              <ul  style="text-align: center; display: inline-flex;gap: 50px;" >  
+                <li>Arifwala</li>
+                <li>Attock</li>
+                <li>lahore</li></ul>
+                
+                <ul  style="text-align: center; display: inline-flex;gap: 50px;" >
+                  <li>islamabad</li>
+                  
+                  <li>gujrat</li>
+                  
+                  <li>kauur</li>
+                  
+                </ul>
+                <ul  style="display: inline-flex;text-align: center;gap: 50px;" >
+                  <li>mardan</li>
+                  <li>kamonki</li>
+                  <li>mureedke</li>
+                </ul>
+                <ul  style="display: inline-flex;gap: 50px;" >
+                  <li>chakwal</li>
+                  <li>hafizabad</li>
+                  <li>gilgit</li>
+                </ul> 
+                <ul  style="display: inline-flex;gap: 50px;" >
+      <li>dg khan </li>
+      <li>jehlum</li>
+      <li>khanpur</li>
+    </ul>
+    <ul  style="display: inline-flex;gap: 50px;" >
+      <li>muree</li>
+      <li>rahim yaar khan</li>
+      <li>sargodha</li>
+    </ul>
+    <ul  style="display: inline-flex;gap: 50px;">
+      <li>skardu</li>
+      <li>swat</li>
+      <li>shahrakpur</li>
+    </ul>
+    
+    <ul  style="display: inline-flex;gap: 50px;">
+      <li>sheikhupura</li>
+      <li>vehari </li>
+      <li>sialkot</li>
+    </ul>
+    <ul  style="display: inline-flex;gap: 50px;">
+      <li>gujranwala</li>
+      <li>rawalpindi</li>
+    </ul>
+    
+    <p style="padding: 10px;">Mattoo Corporation boasts a state of the art professional distribution network that: <br>
+      
+    </div>
+    <p style="padding-left: 15px;color: inherit;">
+      "Spans a sub distribution network in 125 cities across Pakistan.
+      Coverage on 28,000 outlets (85% outlets that deals with imported food stuff and toiletries).
+      Team of total 246 sales and marketing staff at company pay roll. Sub-Distributor sales team and staff is separate.
+      Dealing with IMT’s (International Modern Trade) & LMT’s (Local Modern Trade) across Pakistan namely Metro Cash n
+      Carry, SPAR and Hyperstar (Carrefour),
+      including but not limited to; Metro Cash n Carry and Hyperstar.
+      National Key accounts manager looking after Key accounts with his regional team in KLI.
+      Covers all A, B, and C class outlets selling imported products in Pakistan."
+    </p>
+    <hr>
+    <h1 style="text-align: center;color:#492517;font-family:  Playfair Display, serif;font-weight: 700;" >CONTACT US</h1>
+    <div id="contact-us">
+      <div id="box1">
+        <h2>Head office Lahore</h2>
+        <p>Bunglow # 148-B,<br>
+          Street # 11,<br>
+          Cavalry Ground Extention,<br>
+          Lahore Cantt - 54000,<br>
+          Pakistan <br>
+          UAN: 111-628-866 <br>
+          Fax No : + 92 42 36625573</p> <br>
+        </div>
+        <div id="box2">
+          <h2>Regional office Karachi</h2>
+          <p>
+            Office # 508, Marine Faisal Building,<br>
+            Plot 10/A block 6, PECSH,<br>
+            Nursery Karachi,<br> 
+            Pakistan. 
+          </p>
+        </div>
+        <div id="box3">
+          <h2>Regional office Islamabad</h2>
+          <p>Plot # 197, St # 1, Sec 1/10/3 <br>
+            Industrial Area,<br>
+            Islamabad,<br>
+            Pakistan.</p>
+          </div>
+        </div>
+        <div class="input">
+          <label for="input">NAME</label>
+          <input style="width: min-content;" type="text" name="text" id="text" placeholder="your name" >
+          <label for="input">EMAIL</label>
+          <input style="width: min-content;" type="email" name="email" id="email" placeholder="email address"  >
+          <label for="input">PHONE NUMBER</label>
+          <input style="width: min-content;" type="tel" name="" id="">
+          <label for="input">DROP A COMMENT</label>
+          <textarea name="comment" title="Comment" required="" class="input-text" cols="50" rows="7"></textarea>
+          <button class="btn-last">
+            Submit
+          </button>
+        </div>
+        <button class="button-51" role="button"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
+        
+
+  <footer class="footer">
+    <div class="left-f">
+      <img style="background-color: white; mix-blend-mode: multiply;padding: 10px;" src="logo.webp" alt="">
+      <p style="color:inherit;padding: 10px;">Established in the year 1966 by the Late Mr. H. M. Usman Mattoo. <br>
+        Mattoo Corporation started its operations with <br> Humble beginnings as a small trading house in Lahore.</p>
+      <p style="color: inherit;">© 2024 Mattoo Corporation. All Rights Reserved.</p>
+    </div>
+    <div class="right-f">
+Designed & Developed by ( hassan shahid) 
+    </div>
+  </footer>
+
+</body>
+
+</html>

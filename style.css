@@ -1,0 +1,247 @@
+body {
+    height: 150em;
+    width: 100%;
+
+}
+
+#nav-fix {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-item {
+
+    font-size: large;
+    padding-left: 70px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: #906f6c;
+    color: white;
+    border-radius: 20px;
+}
+
+.d-block {
+    margin-top: 120px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+.d-block:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+    /* Enhanced shadow on hover */
+    animation-direction: reverse;
+}
+
+#h2 {
+    text-align: start;
+    padding: 20px;
+}
+
+#h1 {
+    color: #492517;
+    text-align: center;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 600;
+
+}
+
+.footer {
+    background-color: #9f8080;
+    height: 20em;
+    width: 100%;
+}
+
+.right-f {
+    color: black;
+    padding: 20px;
+    text-align: end;
+    font-family: "Playwrite AT", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+
+
+}
+
+#who-r-we {
+    padding: 20px;
+}
+
+#britania {
+    margin: 10px;
+    border: 1px solid gray;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 0px black;
+    padding: 10px;
+
+}
+
+#nutro {
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 0px black;
+    margin: 10px;
+    border: 1px solid gray;
+    /* border: 0.5px solid black; */
+    height: auto;
+    width: 100%;
+    padding: 10px;
+
+}
+
+#mayora {
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 0px black;
+    margin: 10px;
+    border: 1px solid gray;
+    /* border: 0.5px solid black; */
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+#goroyale {
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 0px black;
+    margin: 10px;
+    border: 1px solid gray;
+    /* border: 0.5px solid black; */
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.our-partners {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .products-list .product-shop {
+        width: 66%;
+        margin: 10px 0;
+    }
+
+} */
+#our-networks {
+    width: 100%;
+    padding: 20px;
+
+}
+
+#contact-us {
+    padding: 10px;
+    display: flex;
+    margin: 5px;
+    gap: 10px;
+}
+
+#box1 {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    /* border: 1px solid black; */
+    width: 33%;
+    box-shadow: 5px 5px 5px 0px;
+}
+
+#box2 {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    /* border: 1px solid black; */
+    width: 33%;
+    box-shadow: 5px 5px 5px 0px;
+}
+
+#box3 {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    font-family: "Playfair Display", serif;
+    /* border: 1px solid black; */
+    width: 33%;
+    box-shadow: 5px 5px 5px 0px;
+}
+
+.input {
+    height: 20em;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.btn-last {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #492517;
+    color: white;
+    margin: 15px;
+}
+
+.btn-last:hover {
+    transition: 0.5s ease-in-out;
+    color: #492517;
+    border: 2px solid #492517;
+    background-color: white;
+}
+
+.button-51 {
+    text-decoration: none;
+    list-style: none;
+    background-color: #492517;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+    /* color: #492517; */
+    color: whitesmoke;
+    font-family: "Avenir Next LT W01 Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 23px;
+    /* position: relative; */
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: "Playfair Display", serif;
+    position: fixed;
+    top: 25em;
+    z-index: 1;
+   border-radius: 200px;
+}
+
+
+.button-51:hover {
+    /* background-color: white;
+    color: #492517;
+    border: 2px solid #492517; */
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
